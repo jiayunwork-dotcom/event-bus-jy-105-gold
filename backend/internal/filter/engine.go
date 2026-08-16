@@ -113,7 +113,7 @@ func matchRule(rule FilterRule, event map[string]interface{}) bool {
 	case "lte":
 		return compareNumbers(val, rule.Value) < 0
 	default:
-		return true
+		return false
 	}
 }
 
